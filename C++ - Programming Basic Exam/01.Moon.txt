@@ -1,0 +1,21 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+    
+    double speed;
+    cin >> speed;
+    double fuel;
+    cin >> fuel;
+
+    int travelTime = ceil(768800 / speed);
+    int commonTime = travelTime + 3; 
+
+    int needFuel = (fuel * 768800) / 100;
+
+    cout << commonTime << endl;
+    cout << needFuel << endl;
+}
+

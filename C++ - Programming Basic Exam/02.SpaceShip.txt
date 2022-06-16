@@ -1,0 +1,31 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+   
+	double width;
+	cin >> width;
+	double length;
+	cin >> length;
+	double height;
+	cin >> height;
+	double averageHeight;
+	cin >> averageHeight;
+
+	double capacity = width * length * height;
+	double oneRommCapacity = (averageHeight + 0.40) * 2 * 2;
+
+	int needSpace = floor(capacity / oneRommCapacity);
+
+	if (needSpace >= 3 && needSpace <= 10) {
+		cout << "The spacecraft holds " << needSpace << " astronauts.";
+	}
+	else if (needSpace < 3) {
+		cout << "The spacecraft is too small.";
+	}
+	else if (needSpace > 10) {
+		cout << "The spacecraft is too big.";
+	}
+}

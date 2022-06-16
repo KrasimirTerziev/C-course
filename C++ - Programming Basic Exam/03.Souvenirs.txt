@@ -1,0 +1,125 @@
+#include <iostream>
+#include <cmath>
+#include <sstream>
+using namespace std;
+
+int main() {
+
+	string team;
+	cin >> team;
+	string souvenir;
+	cin >> souvenir;
+	double purchase;
+	cin >> purchase;
+
+	string str;
+
+	stringstream ss;
+	ss << purchase;
+	ss >> str;
+
+	double sum;
+
+	if (team == "Argentina" && souvenir == "flags") {
+		sum = purchase * 3.25;
+		cout.setf(ios::fixed);
+		cout.precision(2);
+		cout << "Pepi bought " << str << " " << souvenir << " of " << team << " for " << sum << " lv.";
+	}
+	else if (team == "Argentina" && souvenir == "caps") {
+		sum = purchase * 7.20;
+		cout.setf(ios::fixed);
+		cout.precision(2);
+		cout << "Pepi bought " << str << " " << souvenir << " of " << team << " for " << sum << " lv.";
+	}
+	else if (team == "Argentina" && souvenir == "posters") {
+		sum = purchase * 5.10;
+		cout.setf(ios::fixed);
+		cout.precision(2);
+		cout << "Pepi bought " << str << " " << souvenir << " of " << team << " for " << sum << " lv.";
+	}
+	else if (team == "Argentina" && souvenir == "stickers") {
+		sum = purchase * 1.25;
+		cout.setf(ios::fixed);
+		cout.precision(2);
+		cout << "Pepi bought " << str << " " << souvenir << " of " << team << " for " << sum << " lv.";
+	}
+	else if (team == "Brazil" && souvenir == "flags") {
+		sum = purchase * 4.20;
+		cout.setf(ios::fixed);
+		cout.precision(2);
+		cout << "Pepi bought " << str << " " << souvenir << " of " << team << " for " << sum << " lv.";
+	}
+	else if (team == "Brazil" && souvenir == "caps") {
+		sum = purchase * 8.50;
+		cout.setf(ios::fixed);
+		cout.precision(2);
+		cout << "Pepi bought " << str << " " << souvenir << " of " << team << " for " << sum << " lv.";
+	}
+	else if (team == "Brazil" && souvenir == "posters") {
+		sum = purchase * 5.35;
+		cout.setf(ios::fixed);
+		cout.precision(2);
+		cout << "Pepi bought " << str << " " << souvenir << " of " << team << " for " << sum << " lv.";
+	}
+	else if (team == "Brazil" && souvenir == "stickers") {
+		sum = purchase * 1.20;
+		cout.setf(ios::fixed);
+		cout.precision(2);
+		cout << "Pepi bought " << str << " " << souvenir << " of " << team << " for " << sum << " lv.";
+	}
+	else if (team == "Croatia" && souvenir == "flags") {
+		sum = purchase * 2.75;
+		cout.setf(ios::fixed);
+		cout.precision(2);
+		cout << "Pepi bought " << str << " " << souvenir << " of " << team << " for " << sum << " lv.";
+	}
+	else if (team == "Croatia" && souvenir == "caps") {
+		sum = purchase * 6.90;
+		cout.setf(ios::fixed);
+		cout.precision(2);
+		cout << "Pepi bought " << str << " " << souvenir << " of " << team << " for " << sum << " lv.";
+	}
+	else if (team == "Croatia" && souvenir == "posters") {
+		sum = purchase * 4.95;
+		cout.setf(ios::fixed);
+		cout.precision(2);
+		cout << "Pepi bought " << str << " " << souvenir << " of " << team << " for " << sum << " lv.";
+	}
+	else if (team == "Croatia" && souvenir == "stickers") {
+		sum = purchase * 1.10;
+		cout.setf(ios::fixed);
+		cout.precision(2);
+		cout << "Pepi bought " << str << " " << souvenir << " of " << team << " for " << sum << " lv.";
+	}
+	else if (team == "Denmark" && souvenir == "flags") {
+		sum = purchase * 3.10;
+		cout.setf(ios::fixed);
+		cout.precision(2);
+		cout << "Pepi bought " << str << " " << souvenir << " of " << team << " for " << sum << " lv.";
+	}
+	else if (team == "Denmark" && souvenir == "caps") {
+		sum = purchase * 6.50;
+		cout.setf(ios::fixed);
+		cout.precision(2);
+		cout << "Pepi bought " << str << " " << souvenir << " of " << team << " for " << sum << " lv.";
+	}
+	else if (team == "Denmark" && souvenir == "posters") {
+		sum = purchase * 4.80;
+		cout.setf(ios::fixed);
+		cout.precision(2);
+		cout << "Pepi bought " << str << " " << souvenir << " of " << team << " for " << sum << " lv.";
+	}
+	else if (team == "Denmark" && souvenir == "stickers") {
+		sum = purchase * 0.90;
+		cout.setf(ios::fixed);
+		cout.precision(2);
+		cout << "Pepi bought " << str << " " << souvenir << " of " << team << " for " << sum << " lv.";
+	}
+	else {
+		cout << "Invalid country!";
+	}
+	
+
+
+}

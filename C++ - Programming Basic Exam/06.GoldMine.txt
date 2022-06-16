@@ -1,0 +1,42 @@
+#include <iostream>
+#include <cmath>
+#include <sstream>
+#include <climits>
+using namespace std;
+
+int main()
+{
+	int location;
+	cin >> location;
+	double averageGold = 0;
+
+
+	for (int i = 0; i < location; i++) {
+		double average;
+		cin >> average;
+		int days;
+		cin >> days;
+		for (int k = 0; k < days; k++) {
+			double gold;
+			cin >> gold;
+
+			averageGold = averageGold + gold;
+		}
+		double finalAverage = 0;
+		finalAverage = averageGold / days;
+		if (finalAverage >= average) {
+			cout.setf(ios::fixed);
+			cout.precision(2);
+			cout << "Good job! Average gold per day: " << finalAverage << "." << endl;
+		}
+		else if (average > finalAverage) {
+			average = average - finalAverage;
+			cout.setf(ios::fixed);
+			cout.precision(2);
+			cout << "You need " << average << " gold.";
+
+		}
+		averageGold = 0;
+	}
+	return 0;
+}
